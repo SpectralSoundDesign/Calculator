@@ -15,7 +15,7 @@ body {
     margin: auto;
 }
 
-.display {
+#display {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -23,6 +23,7 @@ body {
     font-size: 48px;
     color: white;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .buttons {
@@ -41,9 +42,11 @@ button {
 .num-btns {
     background: darkgray;
     border-radius: 100px;
+    border-style: none;
 }
 
 .op-btns {
     background: orange;
     border-radius: 100px;
+    border-style: none;
 }

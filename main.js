@@ -1,6 +1,8 @@
-const firstNumber = document.getElementById("first-number");
-const secondNumber = document.getElementById("second-number");
-const textOut = document.getElementsByClassName("text-out");
+const disp = document.querySelector("#display");
+const numBtns = document.querySelectorAll(".num-btns");
+const opBtns = document.querySelectorAll(".op-btns");
+
+const input = [];
 
 /*const add = document.getElementById("add");
 const subtract = document.getElementById("subtract");
@@ -44,4 +46,30 @@ function operate(op, firstNumber, secondNumber) {
     }
 
 }
+
+//display numbers
+function display(num) {
+    disp.textContent += num;
+    if (num == "+") {
+        input.push(disp.textContent);
+        disp.textContent = "";
+        console.log(input);
+    }
+}
+
+//get input from number buttons
+numBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        display(button.innerHTML);
+    });
+});
+
+//get input from operator buttons
+opBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        display(button.innerHTML);
+    });
+});
+
+
 
