@@ -23,8 +23,10 @@ body {
     height: 50px;
     font-size: 48px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-right: 10px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .buttons {
@@ -48,10 +50,17 @@ button {
     border-radius: 3px;
 }
 
-.op-btns,
+.op-btns {
+    background: orange;
+    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
 .clear-btn,
 .equals-btn {
-    background: orange;
+    background: darkorange;
     border-style: none;
     border-style: solid;
     border-width: 1px;
